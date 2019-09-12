@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>罕见的生物</title>
+	<script src="script.js" type="text/javascript"></script>
+	<link rel="icon" href="img/earth_AS5_icon.ico">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+	<div class="imageContainer">
+		<a onclick="toggleImageContainer(0)">
+			<div class="closeTab">
+			</div>
+		</a>
+			<div class="enlargedImage">
+			</div>
+	</div>
+	<div class="container">
+
+		<div class="title">
+		</div>
+		<div id="placeholder">
+			By 吴哲轩(9580) & 张洮漮(9681)
+		</div>
+		<div class="navigator">
+			<button class="navBtn" onclick="showNavlist()"></button>
+			<div id="navList" class="navList">
+			<a onclick="displayContent(0)">主页</a>
+			<a onclick="displayContent(1)">前言</a>
+			<a onclick="displayContent(2)">红唇蝙蝠鱼</a>
+			<a onclick="displayContent(3)">熊猫蚂蚁</a>
+			<a onclick="displayContent(4)">大西洋海神海蛞蝓</a>
+			<a onclick="displayContent(5)">安哥拉兔</a>
+			<a onclick="displayContent(6)">影片欣赏</a>
+			<a onclick="displayContent(7)">后文</a>
+			</div>
+		</div>
+		<div class="content_container">
+			<div id="homepage" class="content">
+			</div>
+			<div class="content">
+				<span id="headings">前言 - 网页介绍</span>
+				<p>
+					这个网页主要设计成一种“百科全书”网页的感觉
+				</p>
+				<img onclick='toggleImageContainer(1,"img/introduction.png")' src="img/introduction.png">
+				
+			</div>
+			<div class="content"><!-- 红唇蝙蝠鱼 Ogcocephalus darwini -->
+				<span id="headings">红唇蝙蝠鱼</span>
+				<img src="img/a0.jpg" style="float:right;" onclick='toggleImageContainer(1,"img/a0.jpg")'>
+				<h3 id="botanicalName">学名：<i>Ogcocephalus darwini</i></h3>
+
+				
+				<ol>
+					内容
+					<a onclick='scrollViewTo(0)'><li>介绍</li></a>
+					
+					<a onclick='scrollViewTo(1)'><li>生活环境</li></a>
+					<a onclick='scrollViewTo(2)'><li>形态特征</li></a>
+					<a onclick='scrollViewTo(3)'><li>生活习性</li></a>
+					<a onclick='scrollViewTo(4)'><li>图集</li></a>
+					
+				</ol>
+				<h2 class="clear">介绍 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2> 
+				<p>
+					以其“烈焰红唇”闻名。体长可达25cm，体平扁，尾部粗短。当蝙蝠鱼成熟时，它们的背鳍会变成一个棘壮突起，科学家推测其具有诱捕猎物的功能。特殊的是它有四条“腿”，有着一个大头，用胸鳍在海底“行走”。
+				</p>
+				<h2 class="clear">生活环境 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2>
+				<p>
+					生活在加拉帕戈斯群岛海域。
+					<div class="flex-container">
+						<img src="img/Galapagos_Islands.png" onclick='toggleImageContainer(1,"img/Galapagos_Islands.png")'>
+						<img src="img/Galapagos_Islands_2.png" onclick='toggleImageContainer(1,"img/Galapagos_Islands_2.png")'>
+					</div>
+				</p>
+				<h2 class="clear">形态特征 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2>
+				<p>
+					红唇蝙蝠鱼体长可达25cm，体平扁，尾部粗短。头平扁，宽大，平扁形。吻短，红色，有吻棘。眼大。口较小，亚前位，水平状。红唇极其从两眼之间凸起、类似角的喙，都让它看起来无比怪异。红唇蝙蝠鱼身体颜色是浅棕色，背部有灰色，腹部白色。在蝙蝠鱼的顶端通常有一道深棕色的条纹，从头顶开始，一直沿着背部到尾巴。鼻子和角棕色。有明亮的，几乎带有荧光的红色的嘴唇。
+				</p>
+				<h2 class="clear">生活习性 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2>
+				<p>
+					常被发现在沙滩或海底。虽然它们被认为是浅水形式生活的鱼类，但它们偶尔会在深水中活动。通常生活在水深3-76米的海面下，也会出现在约120米深的珊瑚礁的边缘。可利用臂状胸鳍及小腹鳍爬行于海床上，亦可利用吻触手诱捕猎物，以小鱼及底栖无脊椎动物等为食。主要生活在加拉帕戈斯群岛周围水域。它的胸鳍和腹鳍类似肢体的附属物。当蝙蝠鱼开始游泳时，它的这种古怪造型可能会影响速度。可是尽管它游泳稍显笨拙，但却可以用鳍在海底行走。
+				</p>
+				<h2 class="clear">图集 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2>
+					<div class="flex-container">
+							<img src="img/a0.jpg" onclick='toggleImageContainer(1,"img/a0.jpg")'>
+							<img src="img/a1.jpg" onclick='toggleImageContainer(1,"img/a1.jpg")'>
+							<img src="img/a2.jpg" onclick='toggleImageContainer(1,"img/a2.jpg")'>
+							<img src="img/a3.jpg" onclick='toggleImageContainer(1,"img/a3.jpg")'>
+					</div>
+			</div>
+			<div class="content"><!-- 熊猫蚂蚁 Euspinolia militaris -->
+				<span id="headings">熊猫蚂蚁</span>
+				<img src="img/b0.jpg" style="float:right;" onclick='toggleImageContainer(1,"img/b0.jpg")'>
+				<h3 id="botanicalName">学名：<i>Euspinolia militaris</i></h3>
+
+				
+				<ol>
+					内容
+					<a onclick='scrollViewTo(0)'><li>介绍</li></a>
+					
+					<a onclick='scrollViewTo(1)'><li>生活环境</li></a>
+					<a onclick='scrollViewTo(2)'><li>外形特征</li></a>
+					<a onclick='scrollViewTo(3)'><li>生活习性</li></a>
+					<a onclick='scrollViewTo(4)'><li>繁殖方式</li></a>
+					<a onclick='scrollViewTo(5)'><li>图集</li></a>
+				</ol>
+				<h2 class="clear">介绍 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2> 
+				<p>
+					熊猫蚂蚁属于一类长相颇似蚂蚁的独居性蜂类——蚁蜂，它们不是真正的蚂蚁，而是一种没有翅膀、毛茸茸的蜂类。这个几毫米长的家伙因为长相有几分熊猫样，所以被俗称为“熊猫蚂蚁”
+				</p>
+				<h2 class="clear">生活环境 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2>
+				<p>
+					第一次于1938年在智利被发现，在墨西哥的沙漠地区也有分布。
+				</p>
+				<h2 class="clear">外形特征 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2>
+				<p>
+					它们个头有一粒花生那么大，覆盖着浓密的黑白相间的绒毛，圆头圆脑憨态可掬。
+				</p>
+				<h2 class="clear">生活习性 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2>
+				<p>
+					以花蜜为食，但是不要以为它很温顺，那种黑白花的图案如果出现在昆虫身上，就意味着危险——它们像所有蚁蜂一样性格暴烈，被它蛰一口就要承受剧烈的疼痛。一般雌性在白天活动，雄性在晚上活动。
+				</p>
+				<h2 class="clear">繁殖方式 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2>
+				<p>
+					熊猫蚂蚁还有寄生行为，它们会把卵产进地面筑巢的其它蜂房里，幼虫孵出后，就以寄主的蛹为食；成年后就以花蜜为食了。
+				</p>
+				<h2 class="clear">图集 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2>
+					<div class="flex-container">
+							<img src="img/b0.jpg" onclick='toggleImageContainer(1,"img/b0.jpg")'>
+							<img src="img/b1.jpg" onclick='toggleImageContainer(1,"img/b1.jpg")'>
+							<img src="img/b2.jpg" onclick='toggleImageContainer(1,"img/b2.jpg")'>
+					</div>
+			</div>
+			<div class="content"><!-- 大西洋海神海蛞蝓 Glaucus atlanticus -->
+				<span id="headings">大西洋海神海蛞蝓</span>
+				<img src="img/c2.jpg" style="float:right;" onclick='toggleImageContainer(1,"img/c2.jpg")'>
+				<h3 id="botanicalName">学名：<i>Glaucus atlanticus</i></h3>
+
+				
+				<ol>
+					内容
+					<a onclick='scrollViewTo(0)'><li>介绍</li></a>
+					
+					<a onclick='scrollViewTo(1)'><li>生活环境</li></a>
+					<a onclick='scrollViewTo(2)'><li>形态特征</li></a>
+					<a onclick='scrollViewTo(3)'><li>生活习性</li></a>
+					<a onclick='scrollViewTo(4)'><li>繁殖方式</li></a>
+					<a onclick='scrollViewTo(5)'><li>图集</li></a>
+				</ol>
+				<h2 class="clear">介绍 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2> 
+				<p>
+					大西洋海神海蛞蝓是一种海洋软体动物。漂浮于海面，捕食僧帽水母、银币水母、帆水母、紫螺等生物。大西洋海神海蛞蝓不会被水母的刺细胞蜇伤，还会将猎物的刺细胞储存至自身的刺胞囊中，用于防卫。
+				</p>
+				<h2 class="clear">生活环境 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2>
+				<p>
+					分布于世界多地的海域，如加勒比海、南非东海岸、莫桑比克、北大西洋、太平洋东北部、北太平洋、南非南海岸等。
+				</p>
+				<h2 class="clear">形态特征 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2>
+				<p>
+					大西洋海神海蛞蝓的体长为3-8厘米，体重3-100克。体型扁平，末端尖细，头部圆钝，口腔周围有触须，齿舌具有锯齿状齿片，体侧有一对极小的嗅角。该种背侧部位银灰色，腹侧部位则呈暗蓝色或浅蓝色。因体内有气囊而可以在水中漂浮。
+				</p>
+				<h2 class="clear">生活习性 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2>
+				<p>
+					漂浮于水面上，银色的背面朝下，蓝色的腹面朝上，因此该种实际上是一直以仰卧的姿势生活的。大西洋海神海蛞蝓利用反荫蔽类的保护色进行自我保护。其银白色的背部从水下仰视，看起来就像与泛银光的海面融为一体，令掠食性鱼类无法发现它们；而其蓝色的腹面从空中俯瞰，同海洋整体蔚蓝的颜色相匹配，对于在水面上空飞行的鸟类而言，也不容易找到它们。
+				</p>
+				<h2 class="clear">繁殖方式 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2>
+				<p>
+					该种雌雄同体，雄性生殖器较大且呈钩状，2只交配后均可产卵。大西洋海神海蛞蝓喜欢将卵产于漂浮的木块、被吃剩的猎物的残渣，或其它任何能够持续浮动的物体（包括生物的尸体）。这样可以确保新孵化出的幼崽可以一直维持漂浮着的状态，直到它们自己体内长出了气囊。
+				</p>
+				<h2 class="clear">图集 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2>
+					<div class="flex-container">
+							<img src="img/c0.jpg" onclick='toggleImageContainer(1,"img/c0.jpg")'>
+							<img src="img/c1.jpg" onclick='toggleImageContainer(1,"img/c1.jpg")'>
+							<img src="img/c2.jpg" onclick='toggleImageContainer(1,"img/c2.jpg")'>
+					</div>
+			</div>
+			<div class="content"><!-- 安哥拉兔 Angora rabbit -->
+				<span id="headings">安哥拉兔</span>
+				<img src="img/d0.jpg" style="float:right;" onclick='toggleImageContainer(1,"img/d0.jpg")'>
+				<h3 id="botanicalName">学名：<i>Angora rabbit</i></h3>
+
+				
+				<ol>
+					内容
+					<a onclick='scrollViewTo(0)'><li>介绍</li></a>
+					
+					<a onclick='scrollViewTo(1)'><li>分类及特征</li></a>
+					<a onclick='scrollViewTo(2)'><li>繁殖生理特征</li></a>
+					<a onclick='scrollViewTo(3)'><li>图集</li></a>
+				</ol>
+				<h2 class="clear">介绍 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2> 
+				<p>
+					安哥拉兔（Angora）是世界著名的毛用型兔品种，长毛兔的一种。其毛发浓密细长，网络又称草泥兔。根据国际ARBA组织数据记载，源于土耳其的安哥拉省。另一种说法是起源于英国，由法国人培育而成，因其毛细长，有点像安哥拉山羊而取名为安哥拉兔。因法国王室在18世纪中期将其作为宠物，因此而该世纪末在欧洲流行。
+				</p>
+				<h2 class="clear">分类及特征 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2>
+				<p>
+					安哥拉兔大致上可分为五种，即英系安哥拉兔、法系安哥拉兔、德系安哥拉兔、缎毛安哥拉兔和巨型安哥拉兔。五种之间有些细微的差别，但他们共同的特点却很明显：他们除了面部的一小部分外，几乎全身都长满很浓密的像丝绸的毛，耳朵呈V形，在顶端带有像流苏的毛，眼睛圆而大。身形圆碌碌，性格温顺可爱。毛色多样，如白、黑、灰、金黄色、蓝、朱古力、深褐色、浅紫色等。由于安哥拉兔绒毛会长得很长，使这个毛团般的小动物看起来体积非常大，有时候甚至遮盖了体型，成为名副其实的“毛球”。
+				</p>
+				<h2 class="clear">繁殖生理特征 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2>
+				<p>
+					安哥拉兔耐寒不耐热，适宜的生境温度为10~30℃，在 15~25℃间最适宜于繁殖。安哥拉兔的交配繁殖不受季节限制，公兔可随时交配；未怀孕母兔每 7~9 天发情 1 次，每次持续 3~5 天，每半个月为一个发情周期。分娩后的母兔第 2 天即可发情，此时可进行血配。在非发情期，温度适宜时交配后同样可以排卵受孕。母兔在交配后 10~12 小时开始排卵，此为刺激排卵。
+				</p>
+				<h2 class="clear">图集 <a><button onclick='scrollViewTo(-1)'>Top</button></a></h2>
+					<div class="flex-container">
+							<img src="img/d0.jpg" onclick='toggleImageContainer(1,"img/d0.jpg")'>
+							<img src="img/d1.jpg" onclick='toggleImageContainer(1,"img/d1.jpg")'>
+							<img src="img/d2.jpg" onclick='toggleImageContainer(1,"img/d2.jpg")'>
+					</div>
+			</div>
+			<div class="content">
+				<h2 class="clear">
+					更多罕见的动物
+				</h2>
+				<video controls="" alt="browser doesn't support video" src="video/moreAnimals_2.mp4"></video>
+
+			</div>
+			<div class="content">
+				<h2 class="clear">最后</h2>
+				<p>
+					有兴趣的同学可以到以下网站继续了解
+
+				</p>
+				<p>
+					<a href="https://s3s2.000webhostapp.com">
+					 https://s3s2.000webhostapp.com
+					</a>
+				</p>
+				<h2 class="clear">资料来源</h2>
+				<p>
+					资料-<a href="https://baike.baidu.com/">百度百科</a>
+					<br>
+					影片-<a href="https://www.youtube.com">YouTube</a>
+				</p>
+				<h2 class="clear">网站源码</h2>
+				<p><a href="https://drive.google.com/open?id=1cNKeGYLmpybC8hjjHxbjZRBazAF8RhiJ">https://drive.google.com/open?id=1cNKeGYLmpybC8hjjHxbjZRBazAF8RhiJ
+				</a>
+				</p>
+				
+
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		showHomePage();
+	</script>
+</body>
+
+</html>
